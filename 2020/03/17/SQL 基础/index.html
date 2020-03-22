@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Linux 文件与目录管理 | 风之落木</title>
+  <title>SQL 数据库基础知识 | 风之落木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux文件与目录管理一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录mkdir：创建一个新的目录rmdir：删除一个空的目录cp: 复制文件或目录rm: 移除文件或目录mv: 移动文件与目录，或修改文件与目录的名称">
+  <meta name="description" content="1、SQL SELECT 语句SELECT 语句用于从数据库中选取数据，结果被存储在一个结果表中。语法：SELECT 列名称 FROM 表名;与与SELECT * FROM 表名;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 文件与目录管理">
-<meta property="og:url" content="http://yoursite.com/2020/03/21/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/index.html">
+<meta property="og:title" content="SQL 数据库基础知识">
+<meta property="og:url" content="http://yoursite.com/2020/03/17/SQL%20%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="风之落木">
-<meta property="og:description" content="Linux文件与目录管理一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录mkdir：创建一个新的目录rmdir：删除一个空的目录cp: 复制文件或目录rm: 移除文件或目录mv: 移动文件与目录，或修改文件与目录的名称">
+<meta property="og:description" content="1、SQL SELECT 语句SELECT 语句用于从数据库中选取数据，结果被存储在一个结果表中。语法：SELECT 列名称 FROM 表名;与与SELECT * FROM 表名;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-21T09:49:04.947Z">
-<meta property="article:modified_time" content="2020-03-21T12:20:26.984Z">
+<meta property="article:published_time" content="2020-03-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-22T02:04:55.556Z">
 <meta property="article:author" content="王邦雄">
+<meta property="article:tag" content="SQL数据库">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="风之落木" type="application/atom+xml">
@@ -150,56 +151,78 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Linux 文件与目录管理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SQL 基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 class="article-title" itemprop="name">
-      Linux 文件与目录管理
+      SQL 数据库基础知识
     </h1>
   
 
 
 
         
-        <a href="/2020/03/21/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-03-21T09:49:04.947Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-21</time>
+        <a href="/2020/03/17/SQL%20%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2020-03-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Linux文件与目录管理"><a href="#Linux文件与目录管理" class="headerlink" title="Linux文件与目录管理"></a>Linux文件与目录管理</h1><h1 id="一、常见的处理目录命令"><a href="#一、常见的处理目录命令" class="headerlink" title="一、常见的处理目录命令"></a>一、常见的处理目录命令</h1><p>ls: 列出目录<br>cd：切换目录<br>pwd：显示目前的目录<br>mkdir：创建一个新的目录<br>rmdir：删除一个空的目录<br>cp: 复制文件或目录<br>rm: 移除文件或目录<br>mv: 移动文件与目录，或修改文件与目录的名称 <a id="more"></a> </p>
-<h2 id="1、ls-命令"><a href="#1、ls-命令" class="headerlink" title="1、ls 命令"></a>1、ls 命令</h2><p>语法：<code>ls 目录名称</code><br>[root@www ~]# ls -a 目录名称<br>[root@www ~]# ls -d 目录名称<br>[root@www ~]# ls -l 目录名称<br>选项与参数：<br>-a ：列出全部的文件，包括隐藏文件。<br>-d ：只列出目录本身。<br>-l ：长数据串列出，包含文件的属性与权限等等数据。</p>
-<h2 id="2、cd-命令"><a href="#2、cd-命令" class="headerlink" title="2、cd 命令"></a>2、cd 命令</h2><p>用来切换工作目录的命令。<br>语法：<code>cd [相对路径或绝对路径]</code></p>
+        <h1 id="1、SQL-SELECT-语句"><a href="#1、SQL-SELECT-语句" class="headerlink" title="1、SQL SELECT 语句"></a>1、SQL SELECT 语句</h1><p>SELECT 语句用于从数据库中选取数据，结果被存储在一个结果表中。<br>语法：<code>SELECT 列名称 FROM 表名;</code>与<code>与SELECT * FROM 表名;</code>  <a id="more"></a> </p>
+<h1 id="2、SQL-SELECT-DISTINCT-语句"><a href="#2、SQL-SELECT-DISTINCT-语句" class="headerlink" title="2、SQL SELECT DISTINCT 语句"></a>2、SQL SELECT DISTINCT 语句</h1><p>SELECT DISTINCT 语句用于返回唯一不同的值。<br>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT 列名称 FROM 表名;</span><br></pre></td></tr></table></figure>
+<h1 id="3、SQL-WHERE-子句"><a href="#3、SQL-WHERE-子句" class="headerlink" title="3、SQL WHERE 子句"></a>3、SQL WHERE 子句</h1><p>WHERE 子句用于提取那些满足指定条件的记录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">语法：</span><br><span class="line">SELECT 列名 FROM 表名</span><br><span class="line">WHERE 列名 operator value;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">实例：从 &quot;test&quot; 表中选取地名为 &quot;SH&quot; 的所有网站</span><br><span class="line">SELECT * FROM test WHERE place&#x3D;&#39;SH&#39;;</span><br></pre></td></tr></table></figure>
+<p>SQL 使用单引号来环绕文本值，如果是数值字段，不使用引号。<br>如：<code>SELECT * FROM test WHERE value=1;</code><br>WHERE 子句中的运算符<br>运算符     | 描述<br>——– | —–<br>=  | 等于<br>&lt;&gt;或！=  | 不等于</p>
+<blockquote>
+<p> | 大于<br>&lt;  | 小于<br>=  | 大于等于<br>&lt;=  | 小于等于<br>LIKE  | 搜索某种模式<br>BETWEEN | 在某个范围内<br>IN    | 指定针对某个列的多个可能值</p>
+</blockquote>
+<h1 id="4、SQL-AND-amp-OR-运算符"><a href="#4、SQL-AND-amp-OR-运算符" class="headerlink" title="4、SQL AND &amp; OR 运算符"></a>4、SQL AND &amp; OR 运算符</h1><p>AND &amp; OR 运算符用于基于一个以上的条件对记录进行过滤。</p>
 <ul>
-<li>使用绝对路径切换到 test 目录<code>cd /root/test/</code></li>
-<li>使用相对路径切换到 test 目录<code>cd ./runoob/</code></li>
-<li>切换到家目录，即 /root 目录<code>cd ~</code></li>
-<li>切换到当前的上一级目录，即 /root 的上一级目录<code>cd ..</code><h2 id="3、pwd-命令"><a href="#3、pwd-命令" class="headerlink" title="3、pwd 命令"></a>3、pwd 命令</h2>pwd 是显示当前所在目录的命令。<br>语法： <code>pwd [-P]</code><br>选项与参数：</li>
-<li>P ：显示出完整的路径。<h2 id="4、mkdir-命令"><a href="#4、mkdir-命令" class="headerlink" title="4、mkdir 命令"></a>4、mkdir 命令</h2>使用 mkdir 命令创建一个新的目录<br>语法：<code>mkdir 目录名称[test]</code><br>选项与参数：</li>
-<li>m ：配置文件的权限，直接配置。</li>
-<li>p ：可以自行帮你创建多层目录。<h2 id="5、rmdir-命令"><a href="#5、rmdir-命令" class="headerlink" title="5、rmdir 命令"></a>5、rmdir 命令</h2>使用rmdir 命令删除空的目录<br>语法：<code>rmdir [-p] 目录名称</code><br>选项与参数：</li>
-<li>p ：连同上一级『空的』目录也一起删除<br><code>注意：rmdir 只能删除空的目录，可以使用 rm 命令来删除非空目录。</code></li>
+<li>若第一个条件和第二个条件都成立，则 AND 运算符显示一条记录。</li>
+<li>若第一个条件和第二个条件中只要有一个成立，则 OR 运算符显示一条记录。</li>
 </ul>
-<h2 id="6、cp-命令"><a href="#6、cp-命令" class="headerlink" title="6、cp 命令"></a>6、cp 命令</h2><p>使用cp命令复制文件或目录。<br>语法:<code>cp - [a d f i l p r s u] 来源档(source) 目标档(destination)</code><br>选项与参数：<br>-a：相当于 -pdr 。</p>
-<p>-d：若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身。</p>
-<p>-f：若目标文件已经存在且无法开启，则移除后再尝试一次。</p>
-<p>-i：若目标档(destination)已经存在时，在覆盖时会先询问动作的进行。</p>
-<p>-l：进行硬式连结(hard link)的连结档创建，而非复制文件本身。</p>
-<p>-p：连同文件的属性一起复制过去。</p>
-<p>-r：递归持续复制，用于目录的复制。</p>
-<p>-s：复制成为符号连结档 (symbolic link)。</p>
-<p>-u：若 destination 比 source 旧才升级 destination。</p>
-<h2 id="7、rm-命令"><a href="#7、rm-命令" class="headerlink" title="7、rm 命令"></a>7、rm 命令</h2><p>使用rm命令移除文件或目录<br>语法：<code>rm [-fir] 文件或目录</code><br>选项与参数：<br>-f ：忽略不存在的文件，不会出现警告信息。</p>
-<p>-i ：互动模式，在删除前会询问使用者是否动作。<br>-r ：递归删除</p>
-<h2 id="8、mv"><a href="#8、mv" class="headerlink" title="8、mv"></a>8、mv</h2><p>使用 mv 命令移动文件与目录。<br>语法：<code>mv [-fiu] source destination</code><br>选项与参数：</p>
-<p>-f ：若目标文件已存在，不会询问而直接覆盖。</p>
-<p>-i ：若目标文件已存在，就会询问是否覆盖。</p>
-<p>-u ：若目标文件已存在，且 source 比较新，才会升级 (update)</p>
+<p>把 AND 和 OR 结合起来，使用圆括号来组成复杂的表达式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">例子：</span><br><span class="line">SELECT * FROM test</span><br><span class="line">WHERE id &gt; 8</span><br><span class="line">AND (place&#x3D;&#39;HC&#39; OR place&#x3D;&#39;CN&#39;);</span><br></pre></td></tr></table></figure>
+<h1 id="5、SQL-ORDER-BY-关键字"><a href="#5、SQL-ORDER-BY-关键字" class="headerlink" title="5、SQL ORDER BY 关键字"></a>5、SQL ORDER BY 关键字</h1><p>ORDER BY 关键字用于对结果集按照一个列或者多个列进行排序。<br>ORDER BY 关键字默认按照升序对记录进行排序。如果需要按照降序对记录进行排序，可以使用 DESC 关键字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">语法:</span><br><span class="line">SELECT 列名</span><br><span class="line">FROM 表名</span><br><span class="line">ORDER BY 列名 ASC|DESC;</span><br></pre></td></tr></table></figure>
+<p>ORDER BY 多列时：<br>order by A,B        这个时候都是默认按升序排列<br>order by A desc,B   这个时候 A 降序，B 升序排列<br>order by A ,B desc  这个时候 A 升序，B 降序排列<br><code>即 desc 或者 asc 只对它紧跟着的第一个列名有效，其他不受影响，仍然是默认的升序。</code></p>
+<h1 id="6、SQL-INSERT-INTO-语句"><a href="#6、SQL-INSERT-INTO-语句" class="headerlink" title="6、SQL INSERT INTO 语句"></a>6、SQL INSERT INTO 语句</h1><p>INSERT INTO 语句用于向表中插入新记录。<br>INSERT INTO 语句可以有两种编写形式。</p>
+<ul>
+<li>第一种形式无需指定要插入数据的列名，只需提供被插入的值即可：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名</span><br><span class="line">VALUES (value1,value2,value3,...);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第二种形式需要指定列名及被插入的值：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名 (列名1,列名2,...)</span><br><span class="line">VALUES (value1,value2,value3,...);</span><br></pre></td></tr></table></figure>
+
+<p><code>insert into select 和 select into from 的区别</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">insert into scorebak select * from socre where neza&#x3D;&#39;neza&#39;   插入一行，要求表scorebak 必须存在</span><br><span class="line">select *  into scorebak from score  where neza&#x3D;&#39;neza&#39;  插入一行，要求表scorebak 不存在</span><br></pre></td></tr></table></figure>
+
+<h1 id="7、SQL-UPDATE-语句"><a href="#7、SQL-UPDATE-语句" class="headerlink" title="7、SQL UPDATE 语句"></a>7、SQL UPDATE 语句</h1><p>UPDATE 语句用于更新表中已存在的记录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">语法：</span><br><span class="line">UPDATE 表名</span><br><span class="line">SET 列名1&#x3D;value1,列名2&#x3D;value2,...</span><br><span class="line">WHERE 列名&#x3D;value;</span><br></pre></td></tr></table></figure>
+<p><code>慎重执行没有 WHERE 子句的 UPDATE</code><br>在 MySQL 中可以通过设置 sql_safe_updates 这个自带的参数来解决，当该参数开启的情况下，你必须在update 语句后携带 where 条件，否则就会报错。<br>set sql_safe_updates=1; 表示开启该参数</p>
+<h1 id="8、SQL-DELETE-语句"><a href="#8、SQL-DELETE-语句" class="headerlink" title="8、SQL DELETE 语句"></a>8、SQL DELETE 语句</h1><p>DELETE 语句用于删除表中的行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">语法：</span><br><span class="line">DELETE FROM 表名</span><br><span class="line">WHERE 列名&#x3D;value;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">DELETE FROM test</span><br><span class="line">WHERE name&#x3D;&#39;百度&#39; AND place&#x3D;&#39;SH&#39;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除所有数据<br>可以在不删除表的情况下，删除表中所有的行。这意味着表结构、属性、索引将保持不变：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM 表名; 或 DELETE * FROM 表名;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SQL关于删除的三个语句：DROP、TRUNCATE、 DELETE 的区别。</span><br><span class="line">相同点：drop、delete、truncate 都是删除表的内容。</span><br><span class="line">不同点：</span><br><span class="line"> delete：删除表的内容，表的结构还存在，不释放空间，可以回滚恢复；</span><br><span class="line"> drop：删除表内容和结构，释放空间，没有备份表之前要慎用；</span><br><span class="line"> truncate：删除表的内容，表的结构存在，可以释放空间,没有备份表之前要慎用；</span><br><span class="line">执行速度：</span><br><span class="line">drop &gt; truncate &gt; delete</span><br></pre></td></tr></table></figure>
+
+
 
       
 
@@ -239,6 +262,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">SQL数据库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -289,7 +323,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/21/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/17/SQL%20%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -303,17 +337,17 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/21/SQL%20%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/18/Linux%20vim%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%9A%84%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          SQL 基础
+          Linux vim显示行号的设置方法
         
       </div>
     </a>
   
   
-    <a href="/2020/03/19/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/03/16/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">软件测试理论基础</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -442,6 +476,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">软件测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">SQL数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

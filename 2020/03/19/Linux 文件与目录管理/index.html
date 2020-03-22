@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>软件测试理论基础 | 风之落木</title>
+  <title>Linux文件与目录管理 | 风之落木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="软件测试理论基础一、软件测试概念 通过手工或工具对“被测对象”进行测试操作，从而验证实际与预期结果之间是否存在差异。">
+  <meta name="description" content="一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录mkdir：创建一个新的目录rmdir：删除一个空的目录cp: 复制文件或目录rm: 移除文件或目录mv: 移动文件与目录，或修改文件与目录的名称">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件测试理论基础">
-<meta property="og:url" content="http://yoursite.com/2020/03/19/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="Linux文件与目录管理">
+<meta property="og:url" content="http://yoursite.com/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="风之落木">
-<meta property="og:description" content="软件测试理论基础一、软件测试概念 通过手工或工具对“被测对象”进行测试操作，从而验证实际与预期结果之间是否存在差异。">
+<meta property="og:description" content="一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录mkdir：创建一个新的目录rmdir：删除一个空的目录cp: 复制文件或目录rm: 移除文件或目录mv: 移动文件与目录，或修改文件与目录的名称">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-19T12:50:53.058Z">
-<meta property="article:modified_time" content="2020-03-21T12:20:36.886Z">
+<meta property="article:published_time" content="2020-03-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-22T02:06:06.974Z">
 <meta property="article:author" content="王邦雄">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="风之落木" type="application/atom+xml">
@@ -150,66 +151,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-软件测试理论基础" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Linux 文件与目录管理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 class="article-title" itemprop="name">
-      软件测试理论基础
+      Linux文件与目录管理
     </h1>
   
 
 
 
         
-        <a href="/2020/03/19/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-19T12:50:53.058Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
+        <a href="/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-03-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="软件测试理论基础"><a href="#软件测试理论基础" class="headerlink" title="软件测试理论基础"></a>软件测试理论基础</h1><h1 id="一、软件测试概念"><a href="#一、软件测试概念" class="headerlink" title="一、软件测试概念"></a>一、软件测试概念</h1><p> 通过手工或工具对“被测对象”进行测试操作，从而验证实际与预期结果之间是否存在差异。<a id="more"></a> </p>
-<h1 id="二、软件测试原则"><a href="#二、软件测试原则" class="headerlink" title="二、软件测试原则"></a>二、软件测试原则</h1><p>1、测试证明软件存在缺陷。<br>2、不能执行穷尽测试。<br>3、缺陷存在群集现象，对于软件功能来说，核心功能占20%，非核心是80%，集中测试20%的核心功能发现缺陷的几率高。<br>4、某些测试需要依赖特殊的环境。<br>5、尽可能早的开展测试。<br>6、杀虫剂现象：同样的一个测试用例不能重复的执行多次。<br>7、不存在缺陷谬论。</p>
-<h1 id="三、测试级别"><a href="#三、测试级别" class="headerlink" title="三、测试级别"></a>三、测试级别</h1><p>软件开发都会依据相应的开发模型，测试级别指的就是在这个模型当中我们认为定义的开发步骤。<br>1、单元测试：指的是组成软件最小的底层代码结构，一般都是类、函数、组件等。<br>2、集成测试（接口测试）：将多个单元模块组合在一起，验证它们之间沟通的桥梁是否能正常工作。<br>3、系统测试：由测试人员充当用户然后对软件的功能主体进行测试。</p>
-<h1 id="四、系统测试分类"><a href="#四、系统测试分类" class="headerlink" title="四、系统测试分类"></a>四、系统测试分类</h1><p>1、功能测试：验证当前软件主体功能是否可用。<br>2、兼容性测试：验证当前软件在不同的环境下是否还可以使用。<br>3、安全性测试：验证软件是否只是能授权用户提供功能使用。<br>4、性能测试：相对于当前软件消耗的资源，它的产出能力。</p>
-<h1 id="五、软件测试流程"><a href="#五、软件测试流程" class="headerlink" title="五、软件测试流程"></a>五、软件测试流程</h1><p>1、需求分析</p>
+        <h1 id="一、常见的处理目录命令"><a href="#一、常见的处理目录命令" class="headerlink" title="一、常见的处理目录命令"></a>一、常见的处理目录命令</h1><p>ls: 列出目录<br>cd：切换目录<br>pwd：显示目前的目录<br>mkdir：创建一个新的目录<br>rmdir：删除一个空的目录<br>cp: 复制文件或目录<br>rm: 移除文件或目录<br>mv: 移动文件与目录，或修改文件与目录的名称 <a id="more"></a> </p>
+<h2 id="1、ls-命令"><a href="#1、ls-命令" class="headerlink" title="1、ls 命令"></a>1、ls 命令</h2><p>语法：<code>ls 目录名称</code><br>[root@www ~]# ls -a 目录名称<br>[root@www ~]# ls -d 目录名称<br>[root@www ~]# ls -l 目录名称<br>选项与参数：<br>-a ：列出全部的文件，包括隐藏文件。<br>-d ：只列出目录本身。<br>-l ：长数据串列出，包含文件的属性与权限等等数据。</p>
+<h2 id="2、cd-命令"><a href="#2、cd-命令" class="headerlink" title="2、cd 命令"></a>2、cd 命令</h2><p>用来切换工作目录的命令。<br>语法：<code>cd [相对路径或绝对路径]</code></p>
 <ul>
-<li>核心目的：弄清楚要测啥。</li>
-<li>需求来源：需求规格说明书、API文档、同行竞品分析等。</li>
+<li>使用绝对路径切换到 test 目录<code>cd /root/test/</code></li>
+<li>使用相对路径切换到 test 目录<code>cd ./runoob/</code></li>
+<li>切换到家目录，即 /root 目录<code>cd ~</code></li>
+<li>切换到当前的上一级目录，即 /root 的上一级目录<code>cd ..</code><h2 id="3、pwd-命令"><a href="#3、pwd-命令" class="headerlink" title="3、pwd 命令"></a>3、pwd 命令</h2>pwd 是显示当前所在目录的命令。<br>语法： <code>pwd [-P]</code><br>选项与参数：</li>
+<li>P ：显示出完整的路径。<h2 id="4、mkdir-命令"><a href="#4、mkdir-命令" class="headerlink" title="4、mkdir 命令"></a>4、mkdir 命令</h2>使用 mkdir 命令创建一个新的目录<br>语法：<code>mkdir 目录名称[test]</code><br>选项与参数：</li>
+<li>m ：配置文件的权限，直接配置。</li>
+<li>p ：可以自行帮你创建多层目录。<h2 id="5、rmdir-命令"><a href="#5、rmdir-命令" class="headerlink" title="5、rmdir 命令"></a>5、rmdir 命令</h2>使用rmdir 命令删除空的目录<br>语法：<code>rmdir [-p] 目录名称</code><br>选项与参数：</li>
+<li>p ：连同上一级『空的』目录也一起删除<br><code>注意：rmdir 只能删除空的目录，可以使用 rm 命令来删除非空目录。</code></li>
 </ul>
-<p>2、设计用例  </p>
-<ul>
-<li>用例就是用户为了测试软件的某个功能而执行的操作过程。</li>
-<li>设计用例的方法有：等价类、边界值、因果图等。</li>
-</ul>
-<p>3、评审用例</p>
-<ul>
-<li>对当前的用例进行添加或删除。</li>
-</ul>
-<p>4、配置环境</p>
-<ul>
-<li>环境分类：操作系统、服务器软件、数据库、软件底层代码的执行环境。</li>
-</ul>
-<p>5、执行用例</p>
-<ul>
-<li>执行前先做冒烟测试，其核心是快速的对当前软件的核心功能进行验证。</li>
-</ul>
-<p>6、回归测试及缺陷跟踪</p>
-<ul>
-<li>目的是检验已经被发现的缺陷有没有被正确的修改和修改过程中有没有引发新的缺陷。软件在测试或者其他活动中发现的缺陷经过修改后，都要进行回归测试的验证。</li>
-</ul>
-<p>7、输出测试报告</p>
-<ul>
-<li>将当前的测试过程中产生的数据进行可视化的输出。</li>
-</ul>
-<p>8、测试结束</p>
-<ul>
-<li>把测试过程的文档进行整理。</li>
-</ul>
+<h2 id="6、cp-命令"><a href="#6、cp-命令" class="headerlink" title="6、cp 命令"></a>6、cp 命令</h2><p>使用cp命令复制文件或目录。<br>语法:<code>cp - [a d f i l p r s u] 来源档(source) 目标档(destination)</code><br>选项与参数：<br>-a：相当于 -pdr 。</p>
+<p>-d：若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身。</p>
+<p>-f：若目标文件已经存在且无法开启，则移除后再尝试一次。</p>
+<p>-i：若目标档(destination)已经存在时，在覆盖时会先询问动作的进行。</p>
+<p>-l：进行硬式连结(hard link)的连结档创建，而非复制文件本身。</p>
+<p>-p：连同文件的属性一起复制过去。</p>
+<p>-r：递归持续复制，用于目录的复制。</p>
+<p>-s：复制成为符号连结档 (symbolic link)。</p>
+<p>-u：若 destination 比 source 旧才升级 destination。</p>
+<h2 id="7、rm-命令"><a href="#7、rm-命令" class="headerlink" title="7、rm 命令"></a>7、rm 命令</h2><p>使用rm命令移除文件或目录<br>语法：<code>rm [-fir] 文件或目录</code><br>选项与参数：<br>-f ：忽略不存在的文件，不会出现警告信息。</p>
+<p>-i ：互动模式，在删除前会询问使用者是否动作。<br>-r ：递归删除</p>
+<h2 id="8、mv"><a href="#8、mv" class="headerlink" title="8、mv"></a>8、mv</h2><p>使用 mv 命令移动文件与目录。<br>语法：<code>mv [-fiu] source destination</code><br>选项与参数：</p>
+<p>-f ：若目标文件已存在，不会询问而直接覆盖。</p>
+<p>-i ：若目标文件已存在，就会询问是否覆盖。</p>
+<p>-u ：若目标文件已存在，且 source 比较新，才会升级 (update)</p>
 
       
 
@@ -249,6 +240,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -299,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/19/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -313,15 +315,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/21/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Linux 文件与目录管理
-        
-      </div>
-    </a>
   
+    <a href="/2020/03/18/Linux%20vim%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%9A%84%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux vim显示行号的设置方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -447,6 +445,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">软件测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">SQL数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
