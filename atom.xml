@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-21T13:05:00.268Z</updated>
+  <updated>2020-03-22T01:31:02.710Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux vim显示行号的设置方法</title>
+    <link href="http://yoursite.com/2020/03/22/Linux%20vim%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%9A%84%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/03/22/Linux%20vim%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%9A%84%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/</id>
+    <published>2020-03-22T01:30:04.021Z</published>
+    <updated>2020-03-22T01:31:02.710Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux-vim显示行号的设置方法"><a href="#Linux-vim显示行号的设置方法" class="headerlink" title="Linux vim显示行号的设置方法"></a>Linux vim显示行号的设置方法</h1><p>默认情况下，vim打开文件时不提示行号。<br>临时显示行号：<code>在vim模式下输入 set nu 命令。</code><br>关闭当前打开的vim后就失效。<a id="more"></a><br>如果想每次打开vim都显示行号，则需要修改其配置文件，用户的配置文件放在用户主目录下以 <code>.vimrc</code> 命名。<br>修改配置文件：<br>输入命令：vim   ~/.vimrc，打开文件后，添加 set nu，保存退出，再次用vim打开文件时就可以显示行号了。</p><p>取消显示行号：<code>在vim命令行模式下输入set nonu</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Linux-vim显示行号的设置方法&quot;&gt;&lt;a href=&quot;#Linux-vim显示行号的设置方法&quot; class=&quot;headerlink&quot; title=&quot;Linux vim显示行号的设置方法&quot;&gt;&lt;/a&gt;Linux vim显示行号的设置方法&lt;/h1&gt;&lt;p&gt;默认情况下，vim打开文件时不提示行号。&lt;br&gt;临时显示行号：&lt;code&gt;在vim模式下输入 set nu 命令。&lt;/code&gt;&lt;br&gt;关闭当前打开的vim后就失效。
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>SQL 基础</title>
