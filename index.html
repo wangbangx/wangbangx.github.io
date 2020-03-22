@@ -693,14 +693,14 @@
 
 
   
-    <article id="post-数据结构之队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-树、森林与二叉树的转换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/">数据结构——队列</a>
+      <a class="article-title" href="/2020/01/22/%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BD%AC%E6%8D%A2/">树、森林与二叉树的转换</a>
     </h1>
   
 
@@ -708,20 +708,16 @@
 
         
         
-<a href="/2020/01/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-01-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-11</time>
+<a href="/2020/01/22/%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
+  	<time datetime="2020-01-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-队列的定义"><a href="#1-队列的定义" class="headerlink" title="1. 队列的定义"></a>1. 队列的定义</h4><p>队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。</p>
-<h4 id="2-基本运算"><a href="#2-基本运算" class="headerlink" title="2. 基本运算"></a>2. 基本运算</h4><p>2.1、队列初始化：<code>Init_Queue(q)</code>， 构造一个空队。初始条件： 队q 不存在。</p>
-<p>2.2、入队： <code>In_Queue(q,x)</code>，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。</p>
-<p>2.3、出队： <code>Out_Queue(q,x)</code>， 删除队首元素，并返回其值，队发生变化。初始条件是队q 存在且非空。</p>
-<p>2.4、 读队头元素：<code>Front_Queue(q,x)</code>读队头元素，并返回其值，队不变。初始条件是队q 存在且非空。</p>
-<p>2.5、判队空：<code>Empty_Queue(q)</code>，若q 为空队则返回为1，否则返回为0。初始条件是队 q 存在。</p>
+        <h5 id="1-树的概念"><a href="#1-树的概念" class="headerlink" title="1. 树的概念"></a>1. 树的概念</h5><p>树是 n（n≥0）个有限数据元素的集合。当n＝0 时，称这棵树为空树。在一棵非空树中：<br>（1）有一个特殊的数据元素称为树的根结点，根结点没有前驱结点。<br>（2）若n&gt;1，除根结点之外的其余数据元素被分成m（m&gt;0）个互不相交的集合T1，T2，…，Tm，其中每一个集合Ti（1≤i≤m）本身又是一棵树。树T1，T2，…，Tm 称为这个根结点的子树。<br>树的特点：<br>（1）树的根结点没有前驱结点，除根结点之外的所有结点有且只有一个前驱结点。<br>（2）树中所有结点可以有零个或多个后继结点。</p>
+<h5 id="2-树转换为二叉树"><a href="#2-树转换为二叉树" class="headerlink" title="2. 树转换为二叉树"></a>2. 树转换为二叉树</h5><p>方法：<br>（1）树中所有相邻兄弟之间加一条连线。<br>（2）对树中的每个结点，只保留它与第一个孩子结点之间的连线，删去它与其它孩子结点之间的连线。<br>（3）以树的根结点为轴心，将整棵树顺时针转动一定的角度，使之结构层次分明。</p>
         
       
 
@@ -745,7 +741,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/01/22/%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BD%AC%E6%8D%A2/">展开全文 >></a>
         </p>
       
 
@@ -775,14 +771,14 @@
 
 
   
-    <article id="post-数据结构——栈" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-最优二叉树(哈夫曼树)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88/">数据结构——栈</a>
+      <a class="article-title" href="/2020/01/20/%E6%9C%80%E4%BC%98%E4%BA%8C%E5%8F%89%E6%A0%91(%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91)/">哈夫曼树（最优二叉树）</a>
     </h1>
   
 
@@ -790,15 +786,16 @@
 
         
         
-<a href="/2020/01/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88/" class="archive-article-date">
-  	<time datetime="2020-01-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-08</time>
+<a href="/2020/01/20/%E6%9C%80%E4%BC%98%E4%BA%8C%E5%8F%89%E6%A0%91(%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91)/" class="archive-article-date">
+  	<time datetime="2020-01-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="1、栈的定义"><a href="#1、栈的定义" class="headerlink" title="1、栈的定义"></a>1、栈的定义</h5><p>栈是限制在表的一端进行插入和删除的线性表。允许插入、删除的这一端称为栈顶，另一个固定端称为栈底。当表中没有元素时称为空栈，其特点是后进先出。</p>
+        <h5 id="1．哈夫曼树的概念"><a href="#1．哈夫曼树的概念" class="headerlink" title="1．哈夫曼树的概念"></a>1．哈夫曼树的概念</h5><p>最优二叉树，也称哈夫曼（Haffman）树，是指对于一组带有确定权值的叶结点，构造的具有最小带权路径长度的二叉树。</p>
+<h5 id="2-二叉树的带权路径长度"><a href="#2-二叉树的带权路径长度" class="headerlink" title="2 . 二叉树的带权路径长度"></a>2 . 二叉树的带权路径长度</h5><p>相同权值的一组叶子结点所构成的二叉树有不同的形态和不同的带权路径长度。根据哈夫曼树的定义，一棵二叉树要使其WPL 值最小，必须使权值越大的叶结点越靠近根结点，而权值越小的叶结点越远离根结点。</p>
         
       
 
@@ -822,7 +819,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E6%A0%88/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/01/20/%E6%9C%80%E4%BC%98%E4%BA%8C%E5%8F%89%E6%A0%91(%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91)/">展开全文 >></a>
         </p>
       
 
@@ -852,6 +849,88 @@
 
 
   
+    <article id="post-二叉树的遍历" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/18/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/">二叉树的遍历</a>
+    </h1>
+  
+
+
+
+        
+        
+<a href="/2020/01/18/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/" class="archive-article-date">
+  	<time datetime="2020-01-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。<br>一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。<br>若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。</p>
+<h5 id="1．先序遍历（DLR）"><a href="#1．先序遍历（DLR）" class="headerlink" title="1．先序遍历（DLR）"></a>1．先序遍历（DLR）</h5><p>先序遍历的递归过程为：若二叉树为空，遍历结束。否则，<br>（1）访问根结点；<br>（2）先序遍历根结点的左子树；<br>（3）先序遍历根结点的右子树。<br>递归算法：</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/18/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
