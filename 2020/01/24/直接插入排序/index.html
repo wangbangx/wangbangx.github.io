@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Linux文件与目录管理 | 风之落木</title>
+  <title>直接插入排序 | 风之落木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录">
+  <meta name="description" content="排序方法：将数组中所有的元素依次和前面排序好的元素进行比较，如果当前选择的元素比已排序过的元素小，则进行交换，直到所有元素都排序完毕。直接插入排序的时间复杂度：O(n^2)例子：有一个序列 5，9，6，4，2，8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux文件与目录管理">
-<meta property="og:url" content="http://yoursite.com/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/index.html">
+<meta property="og:title" content="直接插入排序">
+<meta property="og:url" content="http://yoursite.com/2020/01/24/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="风之落木">
-<meta property="og:description" content="一、常见的处理目录命令ls: 列出目录cd：切换目录pwd：显示目前的目录">
+<meta property="og:description" content="排序方法：将数组中所有的元素依次和前面排序好的元素进行比较，如果当前选择的元素比已排序过的元素小，则进行交换，直到所有元素都排序完毕。直接插入排序的时间复杂度：O(n^2)例子：有一个序列 5，9，6，4，2，8">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-23T02:56:20.746Z">
+<meta property="article:published_time" content="2020-01-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-23T02:51:22.744Z">
 <meta property="article:author" content="王邦雄">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="风之落木" type="application/atom+xml">
@@ -155,14 +155,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Linux 文件与目录管理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-直接插入排序" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 class="article-title" itemprop="name">
-      Linux文件与目录管理
+      直接插入排序
     </h1>
   
 
@@ -175,42 +175,20 @@
               <i class="icon-smile icon"></i> �Ķ�����<span id="busuanzi_value_page_pv"></span>��
         </span>
 
-<a href="/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-03-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
+<a href="/2020/01/24/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2020-01-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、常见的处理目录命令"><a href="#一、常见的处理目录命令" class="headerlink" title="一、常见的处理目录命令"></a>一、常见的处理目录命令</h1><p>ls: 列出目录<br>cd：切换目录<br>pwd：显示目前的目录<br> <a id="more"></a> mkdir：创建一个新的目录<br>rmdir：删除一个空的目录<br>cp: 复制文件或目录<br>rm: 移除文件或目录<br>mv: 移动文件与目录，或修改文件与目录的名称  </p>
-<h2 id="1、ls-命令"><a href="#1、ls-命令" class="headerlink" title="1、ls 命令"></a>1、ls 命令</h2><p>语法：<code>ls 目录名称</code><br>[root@www ~]# ls -a 目录名称<br>[root@www ~]# ls -d 目录名称<br>[root@www ~]# ls -l 目录名称<br>选项与参数：<br>-a ：列出全部的文件，包括隐藏文件。<br>-d ：只列出目录本身。<br>-l ：长数据串列出，包含文件的属性与权限等等数据。</p>
-<h2 id="2、cd-命令"><a href="#2、cd-命令" class="headerlink" title="2、cd 命令"></a>2、cd 命令</h2><p>用来切换工作目录的命令。<br>语法：<code>cd [相对路径或绝对路径]</code></p>
-<ul>
-<li>使用绝对路径切换到 test 目录<code>cd /root/test/</code></li>
-<li>使用相对路径切换到 test 目录<code>cd ./runoob/</code></li>
-<li>切换到家目录，即 /root 目录<code>cd ~</code></li>
-<li>切换到当前的上一级目录，即 /root 的上一级目录<code>cd ..</code><h2 id="3、pwd-命令"><a href="#3、pwd-命令" class="headerlink" title="3、pwd 命令"></a>3、pwd 命令</h2>pwd 是显示当前所在目录的命令。<br>语法： <code>pwd [-P]</code><br>选项与参数：</li>
-<li>P ：显示出完整的路径。<h2 id="4、mkdir-命令"><a href="#4、mkdir-命令" class="headerlink" title="4、mkdir 命令"></a>4、mkdir 命令</h2>使用 mkdir 命令创建一个新的目录<br>语法：<code>mkdir 目录名称[test]</code><br>选项与参数：</li>
-<li>m ：配置文件的权限，直接配置。</li>
-<li>p ：可以自行帮你创建多层目录。<h2 id="5、rmdir-命令"><a href="#5、rmdir-命令" class="headerlink" title="5、rmdir 命令"></a>5、rmdir 命令</h2>使用rmdir 命令删除空的目录<br>语法：<code>rmdir [-p] 目录名称</code><br>选项与参数：</li>
-<li>p ：连同上一级『空的』目录也一起删除<br><code>注意：rmdir 只能删除空的目录，可以使用 rm 命令来删除非空目录。</code></li>
-</ul>
-<h2 id="6、cp-命令"><a href="#6、cp-命令" class="headerlink" title="6、cp 命令"></a>6、cp 命令</h2><p>使用cp命令复制文件或目录。<br>语法:<code>cp - [a d f i l p r s u] 来源档(source) 目标档(destination)</code><br>选项与参数：<br>-a：相当于 -pdr 。</p>
-<p>-d：若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身。</p>
-<p>-f：若目标文件已经存在且无法开启，则移除后再尝试一次。</p>
-<p>-i：若目标档(destination)已经存在时，在覆盖时会先询问动作的进行。</p>
-<p>-l：进行硬式连结(hard link)的连结档创建，而非复制文件本身。</p>
-<p>-p：连同文件的属性一起复制过去。</p>
-<p>-r：递归持续复制，用于目录的复制。</p>
-<p>-s：复制成为符号连结档 (symbolic link)。</p>
-<p>-u：若 destination 比 source 旧才升级 destination。</p>
-<h2 id="7、rm-命令"><a href="#7、rm-命令" class="headerlink" title="7、rm 命令"></a>7、rm 命令</h2><p>使用rm命令移除文件或目录<br>语法：<code>rm [-fir] 文件或目录</code><br>选项与参数：<br>-f ：忽略不存在的文件，不会出现警告信息。</p>
-<p>-i ：互动模式，在删除前会询问使用者是否动作。<br>-r ：递归删除</p>
-<h2 id="8、mv"><a href="#8、mv" class="headerlink" title="8、mv"></a>8、mv</h2><p>使用 mv 命令移动文件与目录。<br>语法：<code>mv [-fiu] source destination</code><br>选项与参数：</p>
-<p>-f ：若目标文件已存在，不会询问而直接覆盖。</p>
-<p>-i ：若目标文件已存在，就会询问是否覆盖。</p>
-<p>-u ：若目标文件已存在，且 source 比较新，才会升级 (update)</p>
+        <p>排序方法：将数组中所有的元素依次和前面排序好的元素进行比较，如果当前选择的元素比已排序过的元素小，则进行交换，直到所有元素都排序完毕。<br><code>直接插入排序的时间复杂度：O(n^2)</code><br>例子：有一个序列 5，9，6，4，2，8</p>
+<a id="more"></a>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">第一趟：<span class="number">9</span>与<span class="number">5</span>比较，大于。序列为：<span class="number">5</span>，<span class="number">9</span>，<span class="number">6</span>，<span class="number">4</span>，<span class="number">2</span>，<span class="number">8</span></span><br><span class="line">第二趟：<span class="number">6</span>与前面的序列比较，大于<span class="number">5</span>，插入<span class="number">5</span>之后。序列为：<span class="number">5</span>，<span class="number">6</span>，<span class="number">9</span>，<span class="number">4</span>，<span class="number">2</span>，<span class="number">8</span></span><br><span class="line">第三趟：<span class="number">4</span>与前面的序列比较，小于<span class="number">5</span>，插入<span class="number">5</span>之前。序列为：<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>，<span class="number">9</span>，<span class="number">2</span>，<span class="number">8</span></span><br><span class="line">第四趟：<span class="number">2</span>与前面的序列比较，小于<span class="number">4</span>，插入<span class="number">4</span>之前。序列为：<span class="number">2</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>，<span class="number">9</span>，<span class="number">8</span></span><br><span class="line">第五趟：<span class="number">8</span>与前面的序列比较，大于<span class="number">6</span>小于<span class="number">9</span>，插入<span class="number">6</span>之后<span class="number">9</span>之前。序列为：<span class="number">2</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>，<span class="number">8</span>，<span class="number">9</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> len)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,j,key;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;len;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">array</span>[i]&lt;<span class="built_in">array</span>[i<span class="number">-1</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			key=<span class="built_in">array</span>[i];</span><br><span class="line">			<span class="keyword">for</span>(j=i<span class="number">-1</span>;j&gt;=<span class="number">0</span>&amp;&amp;<span class="built_in">array</span>[j]&gt;key;j--)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">array</span>[j+<span class="number">1</span>]=<span class="built_in">array</span>[j];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">array</span>[j+<span class="number">1</span>]=key;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -255,7 +233,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
@@ -311,7 +289,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/19/Linux%20%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/24/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -325,9 +303,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/02/15/VBScript%20%E5%87%BD%E6%95%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          VBScript函数
+        
+      </div>
+    </a>
   
-    <a href="/2020/03/19/TCP%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">TCP/IP 协议</div>
+  
+    <a href="/2020/01/22/%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BD%AC%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">树、森林与二叉树的转换</div>
       <i class="icon-circle-right"></i>
     </a>
   

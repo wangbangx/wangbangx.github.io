@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>二叉树的遍历 | 风之落木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。 1．先序遍历（DLR）先序遍历的递归过程为：若二">
+  <meta name="description" content="二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二叉树的遍历">
 <meta property="og:url" content="http://yoursite.com/2020/01/18/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/index.html">
 <meta property="og:site_name" content="风之落木">
-<meta property="og:description" content="二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。 1．先序遍历（DLR）先序遍历的递归过程为：若二">
+<meta property="og:description" content="二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-22T13:02:13.848Z">
+<meta property="article:modified_time" content="2020-03-23T02:57:13.002Z">
 <meta property="article:author" content="王邦雄">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -183,9 +183,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。<br>一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。<br>若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。</p>
+        <p>二叉树的遍历是指按照某种顺序访问二叉树中的每个结点，使每个结点被访问一次且仅被访问一次。<br>一棵树由根结点、根结点的左子树和根结点的右子树三部分组成。只要依次遍历这三部分，就可以遍历整个二叉树。<br>若以D、L、R 分别表示访问根结点、遍历根结点的左子树、遍历根结点的右子树，则二叉树的遍历三种方式：DLR（先序遍历）、LDR（中序遍历）和LRD（后序遍历）。<a id="more"></a> </p>
 <h5 id="1．先序遍历（DLR）"><a href="#1．先序遍历（DLR）" class="headerlink" title="1．先序遍历（DLR）"></a>1．先序遍历（DLR）</h5><p>先序遍历的递归过程为：若二叉树为空，遍历结束。否则，<br>（1）访问根结点；<br>（2）先序遍历根结点的左子树；<br>（3）先序遍历根结点的右子树。<br>递归算法：</p>
-<a id="more"></a>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> PreOrder（BiTree bt）</span><br><span class="line"><span class="comment">/*先序遍历二叉树bt*/</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span> (bt==<span class="literal">NULL</span>) </span><br><span class="line"><span class="keyword">return</span>; <span class="comment">/*递归调用的结束条件*/</span></span><br><span class="line">Visite（bt-&gt;data）; <span class="comment">/*访问结点的数据域*/</span></span><br><span class="line">PreOrder（bt-&gt;lchild）; <span class="comment">/*先序递归遍历bt 的左子树*/</span></span><br><span class="line">PreOrder（bt-&gt;rchild）; <span class="comment">/*先序递归遍历bt 的右子树*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="2．中序遍历（LDR）"><a href="#2．中序遍历（LDR）" class="headerlink" title="2．中序遍历（LDR）"></a>2．中序遍历（LDR）</h5><p>中序遍历的递归过程为：若二叉树为空，遍历结束。否则，<br>（1）中序遍历根结点的左子树；<br>（2）访问根结点；<br>（3）中序遍历根结点的右子树。</p>
 <p>递归算法：</p>

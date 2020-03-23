@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>数据结构——队列 | 风之落木</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 队列的定义队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。 2. 基本运算2.1、队列初始化：Init_Queue(q)， 构造一个空队。初始条件： 队q 不存在。 2.2、入队： In_Queue(q,x)，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。 2.3、出队： Out_Queue(q">
+  <meta name="description" content="1. 队列的定义队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。 2. 基本运算2.1、队列初始化：Init_Queue(q)， 构造一个空队。初始条件： 队q 不存在。 2.2、入队： In_Queue(q,x)，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构——队列">
 <meta property="og:url" content="http://yoursite.com/2020/01/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/index.html">
 <meta property="og:site_name" content="风之落木">
-<meta property="og:description" content="1. 队列的定义队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。 2. 基本运算2.1、队列初始化：Init_Queue(q)， 构造一个空队。初始条件： 队q 不存在。 2.2、入队： In_Queue(q,x)，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。 2.3、出队： Out_Queue(q">
+<meta property="og:description" content="1. 队列的定义队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。 2. 基本运算2.1、队列初始化：Init_Queue(q)， 构造一个空队。初始条件： 队q 不存在。 2.2、入队： In_Queue(q,x)，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-22T09:04:03.479Z">
+<meta property="article:modified_time" content="2020-03-23T02:57:56.966Z">
 <meta property="article:author" content="王邦雄">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -186,11 +186,12 @@
         <h4 id="1-队列的定义"><a href="#1-队列的定义" class="headerlink" title="1. 队列的定义"></a>1. 队列的定义</h4><p>队列是指插入在表一端进行，而删除在表的另一端进行。允许插入的一端叫队尾，允许删除的一端叫队头。其特点是先进先出。</p>
 <h4 id="2-基本运算"><a href="#2-基本运算" class="headerlink" title="2. 基本运算"></a>2. 基本运算</h4><p>2.1、队列初始化：<code>Init_Queue(q)</code>， 构造一个空队。初始条件： 队q 不存在。</p>
 <p>2.2、入队： <code>In_Queue(q,x)</code>，对已存在的队列，插入一个元素 x 到队尾，队发生变化。初始条件是 队 q 存在。</p>
+<a id="more"></a>
+
+
 <p>2.3、出队： <code>Out_Queue(q,x)</code>， 删除队首元素，并返回其值，队发生变化。初始条件是队q 存在且非空。</p>
 <p>2.4、 读队头元素：<code>Front_Queue(q,x)</code>读队头元素，并返回其值，队不变。初始条件是队q 存在且非空。</p>
-<p>2.5、判队空：<code>Empty_Queue(q)</code>，若q 为空队则返回为1，否则返回为0。初始条件是队 q 存在。</p>
-<a id="more"></a>
-<h4 id="3-队列的存储实现及运算实现"><a href="#3-队列的存储实现及运算实现" class="headerlink" title="3. 队列的存储实现及运算实现"></a>3. 队列的存储实现及运算实现</h4><p><strong>3.1、顺序队</strong><br>顺序存储的队称为顺序队。<br><strong>**</strong>顺序队的类型定义：<strong>**</strong></p>
+<p>2.5、判队空：<code>Empty_Queue(q)</code>，若q 为空队则返回为1，否则返回为0。初始条件是队 q 存在。#### 3. 队列的存储实现及运算实现<br><strong>3.1、顺序队</strong><br>顺序存储的队称为顺序队。<br><strong>**</strong>顺序队的类型定义：<strong>**</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">define MAXSIZE 1024 &#x2F;*队列的最大容量*&#x2F;</span><br><span class="line">typedef struct</span><br><span class="line">&#123;datatype data[MAXSIZE]; &#x2F;*队员的存储空间*&#x2F;</span><br><span class="line">int rear,front; &#x2F;*队头队尾指针*&#x2F;</span><br><span class="line">&#125;SeQueue;</span><br></pre></td></tr></table></figure>
 <p>解决<code>假溢出</code>的方法之一是将队列的数据区data[0..MAXSIZE-1]看成头尾相接的循环结构，头尾指针的关系不变，将其称为“循环队”。<br>队空情况下也有：front==rear。<br>解决方法有：设一个存储队中元素个数的变量如 num，当<code>num==0</code> 时队空，当<code>num==MAXSIZE</code> 时为队满。<br>循环队列的类型定义：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">datatype data[MAXSIZE]; <span class="comment">/*数据的存储区*/</span></span><br><span class="line"><span class="keyword">int</span> front,rear; <span class="comment">/*队头队尾指针*/</span></span><br><span class="line"><span class="keyword">int</span> num; <span class="comment">/*队中元素的个数*/</span></span><br><span class="line">&#125;c_SeQueue; <span class="comment">/*循环队*/</span></span><br></pre></td></tr></table></figure>
