@@ -616,14 +616,14 @@
 
 
   
-    <article id="post-VBScript 函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-原码、反码和补码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/15/VBScript%20%E5%87%BD%E6%95%B0/">VBScript函数</a>
+      <a class="article-title" href="/2020/03/16/%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E5%92%8C%E8%A1%A5%E7%A0%81/">原码、反码和补码</a>
     </h1>
   
 
@@ -631,16 +631,18 @@
 
         
         
-<a href="/2020/02/15/VBScript%20%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-02-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-15</time>
+<a href="/2020/03/16/%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E5%92%8C%E8%A1%A5%E7%A0%81/" class="archive-article-date">
+  	<time datetime="2020-03-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="String-函数"><a href="#String-函数" class="headerlink" title="String 函数"></a>String 函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">InStr			返回字符串在另一字符串中首次出现的位置。检索从字符串的第一个字符开始 &lt;!-- more --&gt;</span><br><span class="line"> </span><br><span class="line">InStrRev		返回字符串在另一字符串中首次出现的位置。检索从字符串的最末字符开始</span><br><span class="line">LCase			把指定字符串转换为小写</span><br><span class="line">Left			从字符串的左侧返回指定数目的字符</span><br><span class="line">Len				返回字符串中的字符数目</span><br><span class="line">LTrim			删除字符串左侧的空格</span><br><span class="line">RTrim			删除字符串右侧的空格</span><br><span class="line">Trim			删除字符串左侧和右侧的空格</span><br><span class="line">Mid				从字符串返回指定数目的字符</span><br><span class="line">Replace			使用另外一个字符串替换字符串的指定部分指定的次数</span><br><span class="line">Right			返回从字符串右侧开始指定数目的字符</span><br><span class="line">Space			返回由指定数目的空格组成的字符串</span><br><span class="line">StrComp			比较两个字符串，返回代表比较结果的一个值</span><br><span class="line">String			返回包含指定长度的重复字符的字符串</span><br><span class="line">StrReverse		反转字符串</span><br><span class="line">UCase			把指定的字符串转换为大写</span><br></pre></td></tr></table></figure>
-        
+        <h5 id="1．原码"><a href="#1．原码" class="headerlink" title="1．原码"></a>1．原码</h5><p>原码是用 n 位二进制数的最高位作为符号位，符号位的<code>“0”表示正号，“1”表示负号</code>，其余位表示二进制数的数值。<br><img src="https://img-blog.csdnimg.cn/20200425161259323.png" alt="在这里插入图片描述"><br> n 位原码能够表示的数值范围是：<img src="https://img-blog.csdnimg.cn/20200425161353453.png" alt="在这里插入图片描述"></p>
+<h5 id="2．反码"><a href="#2．反码" class="headerlink" title="2．反码"></a>2．反码</h5><p>当机器数为正数时，其反码与原码相同；当机器数为负数时，符号位保持不变（仍为“1”），其余数值位全部按位取反，得到的就是反码。<br><img src="https://img-blog.csdnimg.cn/20200425161517201.png#pic_center" alt="在这里插入图片描述"></p>
+<h5 id="3．补码"><a href="#3．补码" class="headerlink" title="3．补码"></a>3．补码</h5><p>当机器数为正数时，其补码与原码相同；当机器数为负数时，符号位保持不变（仍为“1”），其余数值位全部按位取反后再加 1，得到的就是补码。<code>负数的补码就等于该数的反码加 1。</code><br><img src="https://img-blog.csdnimg.cn/20200425161632611.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200425161718918.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200425161814383.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200425161826425.png#pic_center" alt="在这里插入图片描述"></p>
+
       
 
       
@@ -653,7 +655,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机基础</a>
         		</li>
       		
 		</ul>
@@ -663,7 +665,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/15/VBScript%20%E5%87%BD%E6%95%B0/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/16/%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E5%92%8C%E8%A1%A5%E7%A0%81/">展开全文 >></a>
         </p>
       
 
@@ -693,14 +695,14 @@
 
 
   
-    <article id="post-单片机程序(C语言编写)的编译与下载" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-定点数与浮点数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/05/%E5%8D%95%E7%89%87%E6%9C%BA%E7%A8%8B%E5%BA%8F(C%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99)%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%B8%8B%E8%BD%BD/">单片机程序(C语言编写)的编译与下载</a>
+      <a class="article-title" href="/2020/03/16/%E5%AE%9A%E7%82%B9%E6%95%B0%E4%B8%8E%E6%B5%AE%E7%82%B9%E6%95%B0/">定点数与浮点数</a>
     </h1>
   
 
@@ -708,15 +710,15 @@
 
         
         
-<a href="/2020/02/05/%E5%8D%95%E7%89%87%E6%9C%BA%E7%A8%8B%E5%BA%8F(C%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99)%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%B8%8B%E8%BD%BD/" class="archive-article-date">
-  	<time datetime="2020-02-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-05</time>
+<a href="/2020/03/16/%E5%AE%9A%E7%82%B9%E6%95%B0%E4%B8%8E%E6%B5%AE%E7%82%B9%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-03-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="1-单片机程序的编译过程"><a href="#1-单片机程序的编译过程" class="headerlink" title="1. 单片机程序的编译过程"></a>1. 单片机程序的编译过程</h5><p>程序编好后，需要对程序进行编译，生成可以下载到单片机里的文件。在编译之前，需要先勾选一个选项，<code>Project--&gt;Options for Target „Target1‟...</code>。在弹出的对话框中，点击 <code>Output 选项页</code>，勾选其中的<code>“Create HEX File”</code>复选框，然后点 OK。设置好后，点击<code>“Project--&gt;rebuild all target files”</code>进行编译。编译完成后，在 Keil 下方的 Output 窗口会出现相应的提示，当提示<code>“0 Error(s), 0 warning(s)”</code>表示我们的程序没有错误和警告，就会出现<code>“creating hex file from ”...</code>，意思是从当前工程生成了一个 HEX 文件，要下载到单片机上的就是该HEX 文件。</p>
+        <h5 id="1．定点数"><a href="#1．定点数" class="headerlink" title="1．定点数"></a>1．定点数</h5><p>在机器数中，小数点的位置固定不变的数称为定点数。整数和定点小数都是定点数。</p>
         
       
 
@@ -730,7 +732,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">单片机</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机基础</a>
         		</li>
       		
 		</ul>
@@ -740,7 +742,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/05/%E5%8D%95%E7%89%87%E6%9C%BA%E7%A8%8B%E5%BA%8F(C%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99)%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%B8%8B%E8%BD%BD/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/16/%E5%AE%9A%E7%82%B9%E6%95%B0%E4%B8%8E%E6%B5%AE%E7%82%B9%E6%95%B0/">展开全文 >></a>
         </p>
       
 
@@ -770,14 +772,14 @@
 
 
   
-    <article id="post-51单片机SFR寄存器和位定义" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-计算机的工作原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/04/51%E5%8D%95%E7%89%87%E6%9C%BASFR%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E4%BD%8D%E5%AE%9A%E4%B9%89/">单片机内部结构及其最小系统</a>
+      <a class="article-title" href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/">计算机的工作原理</a>
     </h1>
   
 
@@ -785,15 +787,15 @@
 
         
         
-<a href="/2020/02/04/51%E5%8D%95%E7%89%87%E6%9C%BASFR%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E4%BD%8D%E5%AE%9A%E4%B9%89/" class="archive-article-date">
-  	<time datetime="2020-02-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-04</time>
+<a href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-03-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-sfr-P0-0x80"><a href="#1-sfr-P0-0x80" class="headerlink" title="1. sfr  P0 = 0x80;"></a>1. sfr  P0 = 0x80;</h3><p>sfr 关键字，是 51 单片机特有的，其作用是定义一个单片机特殊功能寄存器(special function register)。51 单片机内部有很多个小模块，每个模块都有 8 个控制开关。P0 是一个功能模块，sfr P0=0X80 定义特殊功能寄存器 P0，P0 的地址值为 0X80。通过设置 P0 内部这个模块的 8 个开关，来让单片机的 P0 这 8 个 IO 口输出高电平或低电平。51 单片机内部有很多寄存器，如果我们想使用的话须提前进行 sfr 声明。不过 Keil 软件已经把所有这些声明都预先写好并保存到一个专门的文件中去了，我们要用的话只需在文件开头添加一行<code>#include&lt;reg52.h&gt;</code>即可。</p>
+        <h5 id="1．计算机的工作原理"><a href="#1．计算机的工作原理" class="headerlink" title="1．计算机的工作原理"></a>1．计算机的工作原理</h5><p>计算机的工作就是顺序执行存放在内存储器中的一系列指令。</p>
         
       
 
@@ -807,7 +809,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">单片机</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机基础</a>
         		</li>
       		
 		</ul>
@@ -817,7 +819,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/04/51%E5%8D%95%E7%89%87%E6%9C%BASFR%E5%AF%84%E5%AD%98%E5%99%A8%E5%92%8C%E4%BD%8D%E5%AE%9A%E4%B9%89/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/">展开全文 >></a>
         </p>
       
 
@@ -847,14 +849,14 @@
 
 
   
-    <article id="post-单片机内部结构及其最小系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-计算机硬件系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/03/%E5%8D%95%E7%89%87%E6%9C%BA%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F/">单片机内部结构及其最小系统</a>
+      <a class="article-title" href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F/">计算机硬件系统</a>
     </h1>
   
 
@@ -862,17 +864,15 @@
 
         
         
-<a href="/2020/02/03/%E5%8D%95%E7%89%87%E6%9C%BA%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
-  	<time datetime="2020-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
+<a href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
+  	<time datetime="2020-03-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-单片机内部结构"><a href="#1-单片机内部结构" class="headerlink" title="1. 单片机内部结构"></a>1. 单片机内部结构</h3><h5 id="Flash"><a href="#Flash" class="headerlink" title="Flash"></a>Flash</h5><p>Flash是单片机的程序存储空间，Flash 的优点是可重复擦写、容量大以及成本低。对于单片机来说 Flash 最大的意义是断电后数据不丢失。</p>
-<h5 id="RAM"><a href="#RAM" class="headerlink" title="RAM"></a>RAM</h5><p>RAM 是单片机的数据存储空间，用来存储程序运行过程中产生的和需要的数据。其优点是读写速度快、可无限次写入。</p>
-<h5 id="SFR"><a href="#SFR" class="headerlink" title="SFR"></a>SFR</h5><p> SFR是单片机的特殊功能寄存器。单片机有很多功能，每个功能都会对应一个或多个 SFR，通过对 SFR 的读写来实现单片机的多种功能。</p>
+        <h5 id="1．计算机硬件系统"><a href="#1．计算机硬件系统" class="headerlink" title="1．计算机硬件系统"></a>1．计算机硬件系统</h5><p>硬件系统是构成计算机系统各个功能部件的物理实体，是计算机能够工作的物质基础。根据冯·诺依曼提出的计算机设计思想，计算机的硬件结构主要由控制器、运算器、存储器、输入设备和输出设备五个部分组成。</p>
         
       
 
@@ -886,7 +886,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">单片机</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机基础</a>
         		</li>
       		
 		</ul>
@@ -896,7 +896,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/03/%E5%8D%95%E7%89%87%E6%9C%BA%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F/">展开全文 >></a>
         </p>
       
 
@@ -928,7 +928,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1048,6 +1048,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">单片机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">计算机基础</a>
               </li>
             
             <div class="clearfix"></div>

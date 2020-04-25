@@ -16,7 +16,7 @@
 <meta property="og:description" content="1. 单片机内部结构FlashFlash是单片机的程序存储空间，Flash 的优点是可重复擦写、容量大以及成本低。对于单片机来说 Flash 最大的意义是断电后数据不丢失。 RAMRAM 是单片机的数据存储空间，用来存储程序运行过程中产生的和需要的数据。其优点是读写速度快、可无限次写入。 SFR SFR是单片机的特殊功能寄存器。单片机有很多功能，每个功能都会对应一个或多个 SFR，通过对 SFR">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-02T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-24T04:33:01.009Z">
+<meta property="article:modified_time" content="2020-03-24T10:02:34.940Z">
 <meta property="article:author" content="王邦雄">
 <meta property="article:tag" content="单片机">
 <meta name="twitter:card" content="summary">
@@ -190,8 +190,9 @@
 <h3 id="2-单片机最小系统"><a href="#2-单片机最小系统" class="headerlink" title="2. 单片机最小系统"></a>2. 单片机最小系统</h3><p>单片机最小系统是指用最少的原件组成单片机可以工作的系统。单片机最小系统的三要素是电源、晶振、复位电路。</p>
 <h5 id="电源"><a href="#电源" class="headerlink" title="电源"></a>电源</h5><p>目前主流单片机的电源有 5V 和 3.3V 两个标准。STC89C52单片机需要 5V 的供电系统，供电电路在 40 脚和 20 脚的位置上，40 脚接的是+5V，通常称为 VCC 或 VDD，代表的是电源正极，20 脚接的是 GND，代表的是电源的负极。+5V 和 GND 之间接一个电容，作用是隔离直流。</p>
 <h5 id="晶振"><a href="#晶振" class="headerlink" title="晶振"></a>晶振</h5><p>晶振，也叫晶体振荡器。作用是为单片机系统提供基准时钟信号，单片机内部所有的工作都是以这个时钟信号为步调基准来进行工作的。STC89C52 单片机的 18 脚和 19 脚是晶振引脚，接一个 11.0592M 的晶振（它每秒钟振荡 11,059,200 次），外加两个 20pF 的电容，电容的作用是帮助晶振起振，并维持振荡信号的稳定。</p>
-<h5 id="复位电路"><a href="#复位电路" class="headerlink" title="复位电路"></a>复位电路</h5><p>复位电路是一种用来使电路恢复到起始状态的电路设备。复位电路启动的手段有：上电复位、手动复位、程序自动复位。</p>
 <ul>
+<li>有源晶振<br>有源晶振是一个完整的谐振振荡器，它是利用石英晶体的压电效应来起振。当我们把有源晶振电路做好后，不需要外接其它器件，只要给它供电，它就可以主动产生振荡频率，并且可以提供高精度的频率基准，信号质量也比无源信号要好。</li>
+<li>无源晶振<br>无源晶振自身无法振荡起来，它需要芯片内部的振荡电路一起工作才能振荡，它允许不同的电压，但是信号质量和精度比有源晶振差一点。其价格便宜。无源晶振两侧通常都会有个电容，一般其容值都选在 10pF~40pF 之间。 20pF 具有极其普遍的适用性。<h5 id="复位电路"><a href="#复位电路" class="headerlink" title="复位电路"></a>复位电路</h5>复位电路是一种用来使电路恢复到起始状态的电路设备。复位电路启动的手段有：上电复位、手动复位、程序自动复位。</li>
 <li>上电复位<br>上电复位是在给电路通电时马上进行复位操作。<br>停电导致单片机内部部分区域数据丢失，下次打开设备的时，能够使单片机能正常运行，单片机要进行一个内部的初始化过程，这个过程称为上电复位，上电复位保证单片机每次都从一个固定的相同的状态开始工作。</li>
 <li>手动复位<br>手动复位是在必要时由手动操作。当程序运行时，如果遭受到意外干扰而导致程序死机，或者程序跑飞的时候，可以按下复位按键，让程序重新初始化重新运行，该过程称作手动复位。</li>
 <li>程序自动复位<br>程序自动复位是根据程序或者电路运行的需要自动地进行。当程序死机或者跑飞的时，单片机有一套自动复位机制，如看门狗，如果程序长时间失去响应，单片机看门狗模块会自动复位重启单片机。</li>
@@ -472,6 +473,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">单片机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">计算机基础</a>
               </li>
             
             <div class="clearfix"></div>
